@@ -1,12 +1,12 @@
 # ADK A2A Agent Quickstart
 
-This repository is the companion to a blog post (**LINK TO BE ADDED**) that shares the end to end process for creating an [Agent2Agent (A2A)](https://a2a-protocol.org/) agent using the [Agent Development Kit (ADK)](https://google.github.io/adk-docs/) framework. Specifically using the `to_a2a()` wrapper from ADK which makes this process super straightforward. I show how to deploy to [Google Cloud Run](https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run) and, as a side mission, surface it within [Gemini Enterprise](https://cloud.google.com/gemini-enterprise) (Google’s AI platform for business users). 
+This repository is the companion to the [Surprisingly Simple A2A Agents with ADK using to_a2a()](https://mandieq.medium.com/surprisingly-simple-a2a-agents-with-adk-using-to-a2a-deploy-to-cloud-run-and-gemini-enterprise-e815bdef4a32) blog post. This shares the end to end process for creating an [Agent2Agent (A2A)](https://a2a-protocol.org/) agent using the [Agent Development Kit (ADK)](https://google.github.io/adk-docs/) framework. Specifically using the `to_a2a()` wrapper from ADK which makes this process super straightforward. I show how to deploy to [Google Cloud Run](https://docs.cloud.google.com/run/docs/overview/what-is-cloud-run) and, as a side mission, surface it within [Gemini Enterprise](https://cloud.google.com/gemini-enterprise) (Google’s AI platform for business users). 
 
-Please see the blog for specifics of the repo contents and deployment instructions.
+Please see the blog for specifics of this repository's contents and deployment instructions.
 
 ## Configuration
 
-ADK requires a `.env` file with the following content:
+When working with Vertex AI on Google Cloud, ADK requires a `.env` file with the following content:
 ```
 GOOGLE_GENAI_USE_VERTEXAI=1
 GOOGLE_CLOUD_PROJECT=<your-project-name>

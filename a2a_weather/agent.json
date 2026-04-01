@@ -1,0 +1,36 @@
+{
+  "capabilities": {},
+  "defaultInputModes": [
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "text/plain"
+  ],
+  "description": "An agent that can provide information about the weather.",
+  "name": "root_agent",
+  "preferredTransport": "JSONRPC",
+  "protocolVersion": "0.3.0",
+  "skills": [
+    {
+      "description": "An agent that can provide information about the weather. I am a helpful AI assistant designed to provide accurate and useful information.",
+      "examples": [],
+      "id": "root_agent",
+      "name": "model",
+      "tags": [
+        "llm"
+      ]
+    },
+    {
+      "description": "Simulates a web search. Use it get information on weather.\n\nArgs:\n    query: A string containing the location to get weather information for.\n\nReturns:\n    A string with the simulated weather information for the queried location.",
+      "id": "root_agent-get_weather",
+      "name": "get_weather",
+      "tags": [
+        "llm",
+        "tools"
+      ]
+    }
+  ],
+  "supportsAuthenticatedExtendedCard": false,
+  "url": "http://localhost:8000/a2a/a2a_weather",
+  "version": "0.0.1"
+}
